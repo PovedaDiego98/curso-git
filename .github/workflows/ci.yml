@@ -1,0 +1,12 @@
+name: CI de prueba
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  saludo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Mensaje de bienvenida
+        run: echo "Hola Diego, este workflow corrio automaticamente"
